@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.7;
+  padding: 20px;
+}
+
+header {
+  background: #1d4b37;
+  color: white;
+  padding: 45px 20px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 2.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.slogan {
+  color: white;
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.subtitulo {
+  opacity: 0.9;
+  font-size: 1.1rem;
+  color: white;
+}
+
+h1 {
+  margin: 35px 0 10px;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 35px;
+  font-size: 1.8rem;
+  color: #1d4b37;
+  padding-left: 12px;
+  font-weight: 600;
+}
+
+h3 {
+  color: #2f7253;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+p {
+  color: #444;
+  margin: 14px 0;
+  font-size: 1.07rem;
+}
+
+nav {
+  margin: 25px auto;
+  max-width: 900px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 14px 26px;
+  border: 1px solid #1d4b3733;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #1d4b37;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+nav li a:hover {
+  background-color: #1d4b37;
+  color: white;
+}
+
+figure {
+  margin: 30px auto;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  box-shadow: 0 18px 18px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.02);
+}
+
+footer {
+  margin-top: 45px;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  color: #555;
+  border-top: 2px solid #1d4b37;
+  border-radius: 6px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+main .container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.servicos ul {
+  margin-top: 12px;
+  padding-left: 25px;
+  line-height: 1.8;
+}
+
+.servicos li {
+  font-size: 1.05rem;
+  color: #333;
+}

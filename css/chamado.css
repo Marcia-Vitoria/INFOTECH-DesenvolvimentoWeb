@@ -1,0 +1,34 @@
+fieldset {
+  border: 1px solid #1d4b37;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #f9f9f9;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+  font-size: 1rem;
+  background: white;
+}
+
+button {
+  background-color: #1d4b37;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #2f7253;
+}
