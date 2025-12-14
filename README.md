@@ -27,11 +27,11 @@ Este é um projeto estático. Não há necessidade de instalação. Siga as orie
 
 1.  Clone o repositório:
     ```sh
-    git clone https://github.com/mavizinhaab/INFOTECH.git
+    git clone https://github.com/Marcia-Vitoria/INFOTECH-DesenvolvimentoWeb.git
     ```
 2.  Navegue até a pasta do projeto:
     ```sh
-    cd projeto-manutencao
+    cd [nome da pasta]
     ```
 3.  Abra o arquivo `index.html` diretamente no seu navegador.
 
