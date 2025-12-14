@@ -2,17 +2,17 @@
 
 Projeto desenvolvido para a disciplina **Desenvolvimento Web**, no 3º ano do curso Técnico Integrado em Informática do **IFPB**. Professor Orientador: **John Lenon**
 
-## 1.  Sobre o Projeto
+## 1.  Sobre o projeto
 
 O SCM é um site estático (HTML/CSS) que simula a interface de uma empresa de manutenção de tecnologia. O site permite que usuários *visualizem serviços e abram chamados de manutenção*.
 
-**Acesso ao Site**
+**Acesso ao site**
 
 O projeto está disponível através do **GitHub Pages** no link abaixo:
  
 [ COLOCAR DEPOIS ]
 
-## 2. Tecnologias Utilizadas
+## 2. Tecnologias utilizadas
 
 * **HTML5** (Semântico)
 * **CSS3**
@@ -21,7 +21,7 @@ O projeto está disponível através do **GitHub Pages** no link abaixo:
     * Grid Layout
     * Media Queries (Responsividade)
 
-## 3. Como Rodar Localmente
+## 3. Como rodar localmente
 
 Este é um projeto estático. Não há necessidade de instalação. Siga as orientações abaixo para roda-ló:
 
@@ -40,7 +40,13 @@ Este é um projeto estático. Não há necessidade de instalação. Siga as orie
 O manual de uso do sistema, detalhando as funcionalidades de cada tela, está localizado em:
 `/docs/manual-uso.pdf`
 
-## 5. Autor
+## 5. Autoras
 
-* **Andréia Vitória Silva Damacena, Cleidiane Lira Gomes, D´ávila Dandara da Nóbrega Amador, Maria Vitória de Abreu, Márcia Vitória Abrantes Pinheiro e Pietra Fernandes Vasconcelos**
-* **Turma:** 3º INTIN
+- [Andréia Vitória Silva Damacena](https://github.com/AndreiaVitoria)
+- [Cleidiane Lira Gomes](https://github.com/Cleide018)
+- [D´ávila Dandara da Nóbrega Amador](https://github.com/d4viladandara)
+- [Maria Vitória de Abreu](https://github.com/mavizinhaab)
+- [Márcia Vitória Abrantes Pinheiro](https://github.com/Marcia-Vitoria)
+- [Pietra Fernandes Vasconcelos](https://github.com/pietrafv)
+
+**Turma:** 3º INTIN
