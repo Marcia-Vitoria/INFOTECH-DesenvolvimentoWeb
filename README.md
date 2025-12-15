@@ -9,8 +9,7 @@ O SCM é um site estático (HTML/CSS) que simula a interface de uma empresa de m
 **Acesso ao site**
 
 O projeto está disponível através do **GitHub Pages** no link abaixo:
- 
-[Acesse aqui](https://marcia-vitoria.github.io/INFOTECH-DesenvolvimentoWeb/index.html)
+ [Acesse aqui](https://marcia-vitoria.github.io/INFOTECH-DesenvolvimentoWeb/index.html)
 
 ## 2. Tecnologias utilizadas
 
