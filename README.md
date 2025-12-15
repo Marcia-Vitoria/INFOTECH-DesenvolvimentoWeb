@@ -10,7 +10,7 @@ O SCM é um site estático (HTML/CSS) que simula a interface de uma empresa de m
 
 O projeto está disponível através do **GitHub Pages** no link abaixo:
  
-[ COLOCAR DEPOIS ]
+[Acesse aqui](https://marcia-vitoria.github.io/INFOTECH-DesenvolvimentoWeb/index.html)
 
 ## 2. Tecnologias utilizadas
 
@@ -31,14 +31,14 @@ Este é um projeto estático. Não há necessidade de instalação. Siga as orie
     ```
 2.  Navegue até a pasta do projeto:
     ```sh
-    cd [nome da pasta]
+    cd INFOTECH-DesenvolvimentoWeb
     ```
 3.  Abra o arquivo `index.html` diretamente no seu navegador.
 
 ## 4. Documentação
 
 O manual de uso do sistema, detalhando as funcionalidades de cada tela, está localizado em:
-https://github.com/Marcia-Vitoria/INFOTECH-DesenvolvimentoWeb/blob/main/manual%20de%20uso/manual%20de%20uso%20-%20Google%20Docs.pdf
+[Acesse aqui](https://github.com/Marcia-Vitoria/INFOTECH-DesenvolvimentoWeb/blob/main/manual%20de%20uso/manual%20de%20uso%20-%20Google%20Docs.pdf)
 
 ## 5. Autoras
 
