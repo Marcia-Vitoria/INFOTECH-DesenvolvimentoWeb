@@ -38,7 +38,7 @@ Este é um projeto estático. Não há necessidade de instalação. Siga as orie
 ## 4. Documentação
 
 O manual de uso do sistema, detalhando as funcionalidades de cada tela, está localizado em:
-`/docs/manual-uso.pdf`
+https://github.com/Marcia-Vitoria/INFOTECH-DesenvolvimentoWeb/blob/main/manual%20de%20uso/manual%20de%20uso%20-%20Google%20Docs.pdf
 
 ## 5. Autoras
 
