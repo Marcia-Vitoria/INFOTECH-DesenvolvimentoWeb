@@ -144,3 +144,36 @@ main .container {
   font-size: 1.05rem;
   color: #333;
 }
+
+ .glossario-tabela {
+      width: 100%;
+      max-width: 900px;
+      margin: 40px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      font-size: 1.05rem;
+    }
+
+    .glossario-tabela th, .glossario-tabela td {
+      padding: 15px 20px;
+      text-align: left;
+    }
+
+    .glossario-tabela th {
+      background-color: #1d4b37;
+      color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .glossario-tabela tr:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+
+    .glossario-tabela tr:hover {
+      background-color: #e2f0e6;
+      transition: 0.3s;
+    }
