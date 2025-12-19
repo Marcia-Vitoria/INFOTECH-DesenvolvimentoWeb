@@ -195,6 +195,49 @@ h2 {
   order: 3;
 }
 
+.video-dicas {
+  background-color: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+  margin: 40px auto;
+  max-width: 900px;
+  border-top: 5px solid #1d4b37;
+  text-align: center;
+}
+
+.video-dicas h2 {
+  color: #1d4b37;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.video-dicas p {
+  color: #444;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 @media (max-width: 600px) {
   .servico-detalhe-card {
     flex: 1 1 100%;
