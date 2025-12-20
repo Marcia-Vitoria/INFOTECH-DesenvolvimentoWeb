@@ -27,13 +27,7 @@ header h1 {
   letter-spacing: 1px;
 }
 
-.slogan {
-  color: white;
-  margin-top: 8px;
-  font-size: 1.1rem;
-  font-weight: 300;
-  opacity: 0.9;
-}
+
 
 nav {
   margin: 25px auto;
@@ -243,3 +237,10 @@ h2 {
     flex: 1 1 100%;
   }
 }
+
+.subtitulo {
+  opacity: 0.9;
+  font-size: 1.1rem;
+  color: white;
+}
+
