@@ -27,18 +27,27 @@ function finalizarCompra() {
 function filtrarProdutos() {
     const filtros = document.querySelectorAll(".sidebar input:checked");
     const produtos = document.querySelectorAll(".produto");
-
-    if (filtros.length === 0) {
-        produtos.forEach(p => p.style.display = "block");
-        return;
-    }
+    const textoBusca = document.getElementById("busca").value.toLowerCase();
 
     produtos.forEach(produto => {
         const categoria = produto.dataset.categoria;
-        produto.style.display = [...filtros].some(f => f.value === categoria)
+        const nome = produto.querySelector("h3").innerText.toLowerCase();
+
+        // Verifica filtro
+        let passaFiltro = filtros.length === 0;
+        filtros.forEach(filtro => {
+            if (filtro.value === categoria) passaFiltro = true;
+        });
+
+        // Verifica busca
+        const passaBusca = nome.includes(textoBusca);
+
+        produto.style.display = (passaFiltro && passaBusca)
             ? "block"
             : "none";
     });
+}
 
-    
+function buscarProdutos() {
+    filtrarProdutos();
 }

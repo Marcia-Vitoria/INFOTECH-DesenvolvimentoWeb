@@ -13,9 +13,15 @@
     <div class="topo-conteudo">
         <h1 class="logo">InfoTech</h1>
 
-        <form class="busca">
-            <input type="search" placeholder="Buscar produtos...">
-        </form>
+      <form class="busca" onsubmit="return false;">
+    <input 
+        type="search" 
+        id="busca"
+        placeholder="Buscar produtos..."
+        onkeyup="buscarProdutos()"
+    >
+</form>
+
 
         <div class="acoes">
             🛒 <span id="qtd">0</span>
