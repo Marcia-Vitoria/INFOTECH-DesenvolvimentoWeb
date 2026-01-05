@@ -229,3 +229,17 @@ ul {
 .ver-perfil:hover {
   background-color: #1d4b37;
 }
+
+.subtitulo {
+  opacity: 0.9;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.slogan {
+  color: white;
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.9;
+}
