@@ -174,12 +174,11 @@ main .container {
     }
 
 
-    /* Estilo para o botão de "departamentos" */
+
+/* botao departamendos */
 nav ul {
   list-style-type: none;
 }
-
-
 
 .dropbtn {
   background-color: #7db459;
