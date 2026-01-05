@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<!-- ===== TOPO ===== -->
+
 <header class="topo">
     <div class="topo-conteudo">
         <h1 class="logo">InfoTech</h1>
@@ -23,7 +23,7 @@
     </div>
 </header>
 
-<!-- ===== MENU ===== -->
+
 <nav class="menu">
     <a href="index.html">Início</a>
     <a href="#">Hardware</a>
@@ -32,10 +32,10 @@
     <a href="#">Ofertas</a>
 </nav>
 
-<!-- ===== CONTEÚDO PRINCIPAL ===== -->
+
 <main class="container">
 
-    <!-- ===== SIDEBAR / FILTROS ===== -->
+    
     <aside class="sidebar">
         <h2>Filtrar por categoria</h2>
 
@@ -63,61 +63,176 @@
             <input type="checkbox" value="headset" onchange="filtrarProdutos()">
             Headset
         </label>
+        <label>
+    <input type="checkbox" value="software" onchange="filtrarProdutos()">
+    Software
+</label>
+
+<label>
+    <input type="checkbox" value="rede" onchange="filtrarProdutos()">
+    Redes
+</label>
+
     </aside>
 
-    <!-- ===== VITRINE DE PRODUTOS ===== -->
+   
     <section class="produtos">
 
         <article class="produto" data-categoria="gpu">
             <span class="badge oferta">OFERTA</span>
-            <img src="https://via.placeholder.com/300" alt="Placa de Vídeo RTX 3060">
+            <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/174762/xlarge/Placa-de-V-deo-Galax-NVIDIA-GeForce-RTX-3060-12GB-GDDR6-LHR-1-Click-OC-15GBps-Ray-Tracing-DLSS-36NOL7MD1VOC_1765552127.jpg" alt="Placa de Vídeo RTX 3060">
             <h3>Placa de Vídeo RTX 3060</h3>
             <p class="preco-antigo">R$ 3.499,00</p>
             <p class="preco">R$ 2.999,00</p>
             <button onclick="addCarrinho(2999)">Adicionar ao carrinho</button>
         </article>
 
+        <article class="produto" data-categoria="gpu">
+    <img src="https://m.media-amazon.com/images/I/61q0rsE3ezL._AC_UF894,1000_QL80_.jpg" alt="RTX 4060">
+    <h3>Placa de Vídeo RTX 4060 8GB</h3>
+    <p class="preco">R$ 2.799,00</p>
+    <button onclick="addCarrinho(2799)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="gpu">
+    <img src="https://m.media-amazon.com/images/I/712yFYT8t+L.jpg" alt="RX 6600">
+    <h3>Placa de Vídeo RX 6600 8GB</h3>
+    <p class="preco">R$ 1.899,00</p>
+    <button onclick="addCarrinho(1899)">Adicionar ao carrinho</button>
+</article>
+
+
         <article class="produto" data-categoria="teclado">
             <span class="badge novo">NOVO</span>
-            <img src="https://via.placeholder.com/300" alt="Teclado Gamer">
+            <img src="https://images.tcdn.com.br/img/img_prod/1224084/teclado_gamer_mecanico_spectra_fury_white_61_teclas_led_rgb_usb_958_1_fb1f9260e4a170094965a62d31387507.jpg" alt="Teclado Gamer">
             <h3>Teclado Gamer Mecânico</h3>
             <p class="preco">R$ 349,00</p>
             <button onclick="addCarrinho(349)">Adicionar ao carrinho</button>
         </article>
 
+        <article class="produto" data-categoria="teclado">
+    <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/135180/xlarge/Teclado-Mec-nico-Gamer-Redragon-Kumara-RGB-Switch-Brown-Anti-Ghosting-ABNT2-K552RGB-1_1756304385.jpg" alt="Teclado Redragon Kumara">
+    <h3>Teclado Mecânico Redragon Kumara</h3>
+    <p class="preco">R$ 289,00</p>
+    <button onclick="addCarrinho(289)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="teclado">
+    <img src="https://m.media-amazon.com/images/I/71Nqzh-u2rL.jpg" alt="Teclado Logitech G213">
+    <h3>Teclado Gamer Logitech G213</h3>
+    <p class="preco">R$ 399,00</p>
+    <button onclick="addCarrinho(399)">Adicionar ao carrinho</button>
+</article>
+
+
         <article class="produto" data-categoria="monitor">
-            <img src="https://via.placeholder.com/300" alt="Monitor 144Hz">
+            <img src="https://i.zst.com.br/thumbs/12/27/39/1201933083.jpg" alt="Monitor 144Hz">
             <h3>Monitor Full HD 144Hz</h3>
             <p class="preco">R$ 1.199,00</p>
             <button onclick="addCarrinho(1199)">Adicionar ao carrinho</button>
         </article>
 
+        <article class="produto" data-categoria="monitor">
+    <img src="https://http2.mlstatic.com/D_Q_NP_861714-MLA99939358419_112025-O.webp" alt="Monitor LG 144Hz">
+    <h3>Monitor LG UltraGear 24” 144Hz</h3>
+    <p class="preco">R$ 1.299,00</p>
+    <button onclick="addCarrinho(1299)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="monitor">
+    <img src="https://www.fujioka.com.br/arquivos/ids/191896-1000-1000/p_53819_alta_1.png?v=637732860847270000" alt="Monitor Samsung Gamer">
+    <h3>Monitor Samsung 24” Gamer 144Hz</h3>
+    <p class="preco">R$ 1.199,00</p>
+    <button onclick="addCarrinho(1199)">Adicionar ao carrinho</button>
+</article>
+
+
         <article class="produto" data-categoria="mouse">
-            <img src="https://via.placeholder.com/300" alt="Mouse Gamer">
+            <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/619776/xlarge/Mouse-Gamer-LED-RGB-Com-Fio-Ergon-mico-Confort-vel-6-Bot-es_1753816482.png" alt="Mouse Gamer">
             <h3>Mouse Gamer RGB</h3>
             <p class="preco">R$ 199,00</p>
             <button onclick="addCarrinho(199)">Adicionar ao carrinho</button>
         </article>
 
+<article class="produto" data-categoria="mouse">
+    <img src="https://images.kabum.com.br/produtos/fotos/102823/mouse-gamer-logitech-g203-lightsync-rgb-8000-dpi-preto-910-005791_1580311058.png" alt="Mouse Logitech G203">
+    <h3>Mouse Gamer Logitech G203</h3>
+    <p class="preco">R$ 159,00</p>
+    <button onclick="addCarrinho(159)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="mouse">
+    <img src="https://images.kabum.com.br/produtos/fotos/113825/mouse-gamer-razer-deathadder-essential-6400dpi-preto-rz01-02540100-r3u1_1583331875.png" alt="Mouse Razer DeathAdder">
+    <h3>Mouse Razer DeathAdder Essential</h3>
+    <p class="preco">R$ 179,00</p>
+    <button onclick="addCarrinho(179)">Adicionar ao carrinho</button>
+</article>
+
+
         <article class="produto" data-categoria="headset">
             <span class="badge oferta">OFERTA</span>
-            <img src="https://via.placeholder.com/300" alt="Headset Gamer">
+            <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rbk1-llp1xree61cb59" alt="Headset Gamer">
             <h3>Headset Gamer Surround</h3>
             <p class="preco-antigo">R$ 399,00</p>
             <p class="preco">R$ 299,00</p>
             <button onclick="addCarrinho(299)">Adicionar ao carrinho</button>
         </article>
 
+        <article class="produto" data-categoria="headset">
+    <img src="https://images.kabum.com.br/produtos/fotos/114365/headset-gamer-hyperx-cloud-stinger-core-pc-ps4-xbox-one-preto-hx-hscsc-bk_1587558074.png" alt="Headset HyperX Cloud Stinger">
+    <h3>Headset HyperX Cloud Stinger</h3>
+    <p class="preco">R$ 299,00</p>
+    <button onclick="addCarrinho(299)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="headset">
+    <img src="https://images.kabum.com.br/produtos/fotos/112299/headset-gamer-logitech-g332-drivers-50mm-preto-981-000755_1580400466.png" alt="Headset Logitech G332">
+    <h3>Headset Logitech G332</h3>
+    <p class="preco">R$ 349,00</p>
+    <button onclick="addCarrinho(349)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="software">
+    <span class="badge novo">DIGITAL</span>
+    <img src="https://images.kabum.com.br/produtos/fotos/102738/licenca-microsoft-office-home-student-2021-para-1-pc-digital-79g-05346_1631548341.png" alt="Microsoft Office">
+    <h3>Microsoft Office 2021</h3>
+    <p class="preco">R$ 499,00</p>
+    <button onclick="addCarrinho(499)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="software">
+    <span class="badge novo">DIGITAL</span>
+    <img src="https://images.kabum.com.br/produtos/fotos/119758/licenca-windows-11-home-64-bits-digital-kw9-00664_1639764519.png" alt="Windows 11">
+    <h3>Windows 11 Home</h3>
+    <p class="preco">R$ 699,00</p>
+    <button onclick="addCarrinho(699)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="rede">
+    <img src="https://images.kabum.com.br/produtos/fotos/113832/roteador-wireless-dual-band-ac1200-tp-link-archer-c6-gigabit_1580314289.png" alt="Roteador TP-Link">
+    <h3>Roteador TP-Link AC1200</h3>
+    <p class="preco">R$ 249,00</p>
+    <button onclick="addCarrinho(249)">Adicionar ao carrinho</button>
+</article>
+
+<article class="produto" data-categoria="rede">
+    <img src="https://images.kabum.com.br/produtos/fotos/112828/adaptador-usb-wireless-tp-link-archer-t2u-ac600-dual-band_1579717472.png" alt="Adaptador Wi-Fi">
+    <h3>Adaptador Wi-Fi USB Dual Band</h3>
+    <p class="preco">R$ 129,00</p>
+    <button onclick="addCarrinho(129)">Adicionar ao carrinho</button>
+</article>
+
+
     </section>
 </main>
 
-<!-- ===== CARRINHO FLUTUANTE ===== -->
+
 <div class="carrinho">
     <p>Total: R$ <span id="total">0.00</span></p>
     <button onclick="finalizarCompra()">Finalizar compra</button>
 </div>
 
-<!-- ===== RODAPÉ ===== -->
+
 <footer>
     <p>© 2026 InfoTech Store — Projeto acadêmico</p>
 </footer>
