@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>InfoTech Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loja.css">
+</head>
+<body>
+
+<header class="topo">
+    <div class="topo-conteudo">
+        <h1 class="logo">InfoTech</h1>
+        <input type="search" placeholder="Buscar produtos">
+        <div class="acoes">
+            🛒 <span id="qtd">0</span>
+        </div>
+    </div>
+</header>
+
+<nav class="menu">
+    <a href="index.html">Início</a>
+    <a href="#">Hardware</a>
+    <a href="#">Periféricos</a>
+    <a href="#">Monitores</a>
+    <a href="#">Ofertas</a>
+</nav>
+
+<main class="container">
+
+    <!-- SIDEBAR / FILTROS -->
+    <aside class="sidebar">
+        <h2>Filtros</h2>
+
+        <label>
+            <input type="checkbox" value="gpu" onchange="filtrarProdutos()">
+            Placa de Vídeo
+        </label>
+
+        <label>
+            <input type="checkbox" value="teclado" onchange="filtrarProdutos()">
+            Teclado
+        </label>
+
+        <label>
+            <input type="checkbox" value="monitor" onchange="filtrarProdutos()">
+            Monitor
+        </label>
+
+        <label>
+            <input type="checkbox" value="mouse" onchange="filtrarProdutos()">
+            Mouse
+        </label>
+
+        <label>
+            <input type="checkbox" value="headset" onchange="filtrarProdutos()">
+            Headset
+        </label>
+    </aside>
+
+    <!-- PRODUTOS -->
+    <section class="produtos">
+
+        <div class="produto" data-categoria="gpu">
+            <img src="https://via.placeholder.com/200">
+            <h3>RTX 3060</h3>
+            <p class="preco">R$ 2.999,00</p>
+            <button onclick="addCarrinho(2999)">Adicionar</button>
+        </div>
+
+        <div class="produto" data-categoria="teclado">
+            <img src="https://via.placeholder.com/200">
+            <h3>Teclado Gamer</h3>
+            <p class="preco">R$ 349,00</p>
+            <button onclick="addCarrinho(349)">Adicionar</button>
+        </div>
+
+        <div class="produto" data-categoria="monitor">
+            <img src="https://via.placeholder.com/200">
+            <h3>Monitor 144Hz</h3>
+            <p class="preco">R$ 1.199,00</p>
+            <button onclick="addCarrinho(1199)">Adicionar</button>
+        </div>
+
+        <div class="produto" data-categoria="mouse">
+            <img src="https://via.placeholder.com/200">
+            <h3>Mouse Gamer</h3>
+            <p class="preco">R$ 199,00</p>
+            <button onclick="addCarrinho(199)">Adicionar</button>
+        </div>
+
+        <div class="produto" data-categoria="headset">
+            <img src="https://via.placeholder.com/200">
+            <h3>Headset Gamer</h3>
+            <p class="preco">R$ 299,00</p>
+            <button onclick="addCarrinho(299)">Adicionar</button>
+        </div>
+
+    </section>
+</main>
+
+<!-- CARRINHO -->
+<div class="carrinho">
+    Total: R$ <span id="total">0.00</span><br>
+    <button onclick="finalizarCompra()">Finalizar compra</button>
+</div>
+
+<footer>
+    © 2026 InfoTech Store — Projeto acadêmico
+</footer>
+
+<script src="loja.js"></script>
+</body>
+</html>
