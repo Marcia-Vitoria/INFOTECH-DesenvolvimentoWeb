@@ -34,15 +34,9 @@ function filtrarProdutos() {
     }
 
     produtos.forEach(produto => {
-        const categoria = produto.getAttribute("data-categoria");
-        let mostrar = false;
-
-        filtros.forEach(filtro => {
-            if (filtro.value === categoria) {
-                mostrar = true;
-            }
-        });
-
-        produto.style.display = mostrar ? "block" : "none";
+        const categoria = produto.dataset.categoria;
+        produto.style.display = [...filtros].some(f => f.value === categoria)
+            ? "block"
+            : "none";
     });
 }

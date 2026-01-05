@@ -8,16 +8,22 @@
 </head>
 <body>
 
+<!-- ===== TOPO ===== -->
 <header class="topo">
     <div class="topo-conteudo">
         <h1 class="logo">InfoTech</h1>
-        <input type="search" placeholder="Buscar produtos">
+
+        <form class="busca">
+            <input type="search" placeholder="Buscar produtos...">
+        </form>
+
         <div class="acoes">
             🛒 <span id="qtd">0</span>
         </div>
     </div>
 </header>
 
+<!-- ===== MENU ===== -->
 <nav class="menu">
     <a href="index.html">Início</a>
     <a href="#">Hardware</a>
@@ -26,25 +32,26 @@
     <a href="#">Ofertas</a>
 </nav>
 
+<!-- ===== CONTEÚDO PRINCIPAL ===== -->
 <main class="container">
 
-    <!-- SIDEBAR / FILTROS -->
+    <!-- ===== SIDEBAR / FILTROS ===== -->
     <aside class="sidebar">
-        <h2>Filtros</h2>
+        <h2>Filtrar por categoria</h2>
 
         <label>
             <input type="checkbox" value="gpu" onchange="filtrarProdutos()">
-            Placa de Vídeo
+            Placas de Vídeo
         </label>
 
         <label>
             <input type="checkbox" value="teclado" onchange="filtrarProdutos()">
-            Teclado
+            Teclados
         </label>
 
         <label>
             <input type="checkbox" value="monitor" onchange="filtrarProdutos()">
-            Monitor
+            Monitores
         </label>
 
         <label>
@@ -58,55 +65,61 @@
         </label>
     </aside>
 
-    <!-- PRODUTOS -->
+    <!-- ===== VITRINE DE PRODUTOS ===== -->
     <section class="produtos">
 
-        <div class="produto" data-categoria="gpu">
-            <img src="https://via.placeholder.com/200">
-            <h3>RTX 3060</h3>
+        <article class="produto" data-categoria="gpu">
+            <span class="badge oferta">OFERTA</span>
+            <img src="https://via.placeholder.com/300" alt="Placa de Vídeo RTX 3060">
+            <h3>Placa de Vídeo RTX 3060</h3>
+            <p class="preco-antigo">R$ 3.499,00</p>
             <p class="preco">R$ 2.999,00</p>
-            <button onclick="addCarrinho(2999)">Adicionar</button>
-        </div>
+            <button onclick="addCarrinho(2999)">Adicionar ao carrinho</button>
+        </article>
 
-        <div class="produto" data-categoria="teclado">
-            <img src="https://via.placeholder.com/200">
-            <h3>Teclado Gamer</h3>
+        <article class="produto" data-categoria="teclado">
+            <span class="badge novo">NOVO</span>
+            <img src="https://via.placeholder.com/300" alt="Teclado Gamer">
+            <h3>Teclado Gamer Mecânico</h3>
             <p class="preco">R$ 349,00</p>
-            <button onclick="addCarrinho(349)">Adicionar</button>
-        </div>
+            <button onclick="addCarrinho(349)">Adicionar ao carrinho</button>
+        </article>
 
-        <div class="produto" data-categoria="monitor">
-            <img src="https://via.placeholder.com/200">
-            <h3>Monitor 144Hz</h3>
+        <article class="produto" data-categoria="monitor">
+            <img src="https://via.placeholder.com/300" alt="Monitor 144Hz">
+            <h3>Monitor Full HD 144Hz</h3>
             <p class="preco">R$ 1.199,00</p>
-            <button onclick="addCarrinho(1199)">Adicionar</button>
-        </div>
+            <button onclick="addCarrinho(1199)">Adicionar ao carrinho</button>
+        </article>
 
-        <div class="produto" data-categoria="mouse">
-            <img src="https://via.placeholder.com/200">
-            <h3>Mouse Gamer</h3>
+        <article class="produto" data-categoria="mouse">
+            <img src="https://via.placeholder.com/300" alt="Mouse Gamer">
+            <h3>Mouse Gamer RGB</h3>
             <p class="preco">R$ 199,00</p>
-            <button onclick="addCarrinho(199)">Adicionar</button>
-        </div>
+            <button onclick="addCarrinho(199)">Adicionar ao carrinho</button>
+        </article>
 
-        <div class="produto" data-categoria="headset">
-            <img src="https://via.placeholder.com/200">
-            <h3>Headset Gamer</h3>
+        <article class="produto" data-categoria="headset">
+            <span class="badge oferta">OFERTA</span>
+            <img src="https://via.placeholder.com/300" alt="Headset Gamer">
+            <h3>Headset Gamer Surround</h3>
+            <p class="preco-antigo">R$ 399,00</p>
             <p class="preco">R$ 299,00</p>
-            <button onclick="addCarrinho(299)">Adicionar</button>
-        </div>
+            <button onclick="addCarrinho(299)">Adicionar ao carrinho</button>
+        </article>
 
     </section>
 </main>
 
-<!-- CARRINHO -->
+<!-- ===== CARRINHO FLUTUANTE ===== -->
 <div class="carrinho">
-    Total: R$ <span id="total">0.00</span><br>
+    <p>Total: R$ <span id="total">0.00</span></p>
     <button onclick="finalizarCompra()">Finalizar compra</button>
 </div>
 
+<!-- ===== RODAPÉ ===== -->
 <footer>
-    © 2026 InfoTech Store — Projeto acadêmico
+    <p>© 2026 InfoTech Store — Projeto acadêmico</p>
 </footer>
 
 <script src="loja.js"></script>
