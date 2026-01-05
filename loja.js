@@ -1,6 +1,27 @@
 let quantidade = 0;
 let total = 0;
 
+function mostrarCategoria(categoria) {
+    const produtos = document.querySelectorAll('.produto');
+
+    produtos.forEach(produto => {
+        const catProduto = produto.dataset.categoria;
+
+        // Mostrar todos
+        if (categoria === 'todos') {
+            produto.style.display = 'block';
+        }
+        // Categoria específica
+        else if (catProduto === categoria) {
+            produto.style.display = 'block';
+        }
+        // Ocultar os outros
+        else {
+            produto.style.display = 'none';
+        }
+    });
+}
+
 function addCarrinho(preco) {
     quantidade++;
     total += preco;
