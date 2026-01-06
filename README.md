@@ -4,7 +4,7 @@ Projeto desenvolvido para a disciplina **Desenvolvimento Web**, no 3º ano do cu
 
 ## 1.  Sobre o projeto
 
-O SCM é um site estático (HTML/CSS) que simula a interface de uma empresa de manutenção de tecnologia. O site permite que usuários *visualizem serviços e abram chamados de manutenção*.
+O SCM é um site estático (HTML/CSS/JS) que simula a interface de uma empresa de manutenção de tecnologia e um E-commerce para vender hardware integrado de um Chatbot que responde dúvidas sobre a InfoTech automaticamente. O site permite que usuários *visualizem serviços e abram chamados de manutenção além de permitir conhecer nossos especialistas, conferir os principais termos da TI por meio do glossário disponibiizado e os produtos que estão a venda* .
 
 **Acesso ao site**
 
@@ -14,11 +14,18 @@ O projeto está disponível através do **GitHub Pages** no link abaixo:
 ## 2. Tecnologias utilizadas
 
 * **HTML5** (Semântico)
+    * Grids
+    * Sidebars
 * **CSS3**
     * Variáveis CSS
     * Flexbox
     * Grid Layout
+    * Animations
+    * Sticky
     * Media Queries (Responsividade)
+* **JavaScript**
+* **AI & APIs**
+     * Integração Low-code (Chatling)
 
 ## 3. Como rodar localmente
 
