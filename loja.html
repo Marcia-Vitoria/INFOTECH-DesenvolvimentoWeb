@@ -10,36 +10,73 @@
 </head>
 <body>
 
+<div class="topo-fixo">
+    <header class="topo">
+        <div class="topo-conteudo">
+            <h1 class="logo">InfoTech</h1>
 
-<header class="topo">
-    <div class="topo-conteudo">
-        <h1 class="logo">InfoTech</h1>
+        <form class="busca" onsubmit="return false;">
+        <input 
+            type="search" 
+            id="busca"
+            placeholder="Buscar produtos..."
+            onkeyup="buscarProdutos()"
+        >
+    </form>
 
-      <form class="busca" onsubmit="return false;">
-    <input 
-        type="search" 
-        id="busca"
-        placeholder="Buscar produtos..."
-        onkeyup="buscarProdutos()"
-    >
-</form>
-
-
-        <div class="acoes">
-            🛒 <span id="qtd">0</span>
+            <div class="acoes">
+                🛒 <span id="qtd">0</span>
+            </div>
         </div>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Assistência técnica</a></li>
+        <a href="loja.html">Início</a>
+        <a href="#" onclick="mostrarCategoria('gpu')">Hardware</a>
+        <a href="#" onclick="mostrarCategoria('teclado')">Periféricos</a>
+        <a href="#" onclick="mostrarCategoria('monitor')">Monitores</a>
+        <a href="#" onclick="mostrarCategoria('ofertas')">Ofertas</a>
+    </nav>
+</div>
+
+<section class="inicio">
+
+  <div class="inicio-conteudo">
+    <div class="texto-inicio">
+      <h2>Performance que acompanha você</h2>
+      <p>
+        Componentes de alto desempenho para quem exige qualidade,
+        confiabilidade e tecnologia de ponta.
+      </p>
     </div>
-</header>
 
+    <div class="img-lp">
+      <img
+        src="https://img.freepik.com/fotos-premium/placa-de-circuito-impresso-fechada-de-chip-de-inteligencia-artificial-com-microchips-nela-renderizacao-3d-fechada_407240-1646.jpg"
+        alt="Tecnologia e hardware"
+      />
+    </div>
+  </div>
 
-<nav class="menu">
-    <a href="#" onclick="mostrarCategoria('todos')">Início</a>
-    <a href="#" onclick="mostrarCategoria('gpu')">Hardware</a>
-    <a href="#" onclick="mostrarCategoria('teclado')">Periféricos</a>
-    <a href="#" onclick="mostrarCategoria('monitor')">Monitores</a>
-    <a href="#" onclick="mostrarCategoria('ofertas')">Ofertas</a>
-</nav>
+  <div class="beneficios-inicio">
+    <div class="beneficio">
+      <h4>Produtos Originais</h4>
+      <p>Somente marcas confiáveis e garantia oficial.</p>
+    </div>
 
+    <div class="beneficio">
+      <h4>Instalação Profissional</h4>
+      <p>Assistência técnica especializada.</p>
+    </div>
+
+    <div class="beneficio">
+      <h4>Facilidade</h4>
+      <p>Compra simples e segura.</p>
+    </div>
+  </div>
+
+</section>
 
 <main class="container">
 
@@ -84,7 +121,7 @@
     </aside>
 
    
-    <section class="produtos">
+    <section id="produtos" class="produtos">
 
         <article class="produto" data-categoria="gpu">
             <span class="badge oferta">OFERTA</span>
@@ -242,9 +279,42 @@
     <button onclick="finalizarCompra()">Finalizar compra</button>
 </div>
 
+  <section class="receber-oferta">
+    <h3>Monte seu setup ideal hoje</h3>
+    <button id="btnOfertas">Receber ofertas</button>
+  </section>
 
-<footer>
-    <p>© 2026 InfoTech Store — Projeto acadêmico</p>
+  <footer class="rodape">
+  <div class="rodape-conteudo">
+
+    <div class="rodape-marca">
+      <h3 class="rodape-logo">
+        <span class="rodape-logo-destaque">InfoTech</span>
+      </h3>
+      <p class="rodape-descricao">
+        Tecnologia ao seu alcance.
+      </p>
+    </div>
+
+    <div class="rodape-links">
+      <h4>Links</h4>
+      <a href="chamado.html">Abrir Chamado</a>
+      <a href="servico.html">Serviços</a>
+      <a href="perfil.html">Sobre Nós</a>
+      <a href="#produtos">Produtos</a>
+    </div>
+
+    <div class="rodape-contato">
+      <h4>Contato</h4>
+      <p>E-mail: contato@infotech.ifpb.br</p>
+      <p>Telefone: (83) 3532-4100</p>
+    </div>
+
+  </div>
+
+  <div class="rodape-direitos">
+    &copy; 2025 InfoTech. Todos os direitos reservados.
+  </div>
 </footer>
 
 <script src="loja.js"></script>
