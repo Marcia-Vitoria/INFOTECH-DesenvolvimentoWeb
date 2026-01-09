@@ -447,3 +447,170 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+.menu-hamburguer {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  position: relative;
+  top: -18px;
+}
+
+.menu-hamburguer span {
+  width: 28px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+
+  .menu-hamburguer {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0f3d2e;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .menu.ativo {
+    display: flex;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .logo {
+    font-size: 36px;
+  }
+
+  .texto-inicio h2 {
+    font-size: 2.8rem;
+  }
+
+  .texto-inicio p {
+    font-size: 1rem;
+  }
+
+  .img-lp {
+    max-width: 480px;
+  }
+
+  .rodape {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .topo {
+    padding: 12px 5%;
+  }
+
+  .topo-conteudo {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .busca input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .acoes {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .inicio {
+    padding: 60px 5%;
+    gap: 40px;
+  }
+
+  .texto-inicio {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .texto-inicio h2 {
+    font-size: 2.2rem;
+  }
+
+  .texto-inicio p {
+    font-size: 0.95rem;
+  }
+
+  .beneficio {
+    padding: 20px;
+  }
+
+  .sidebar {
+    padding: 16px;
+  }
+
+  .sidebar h2 {
+    font-size: 16px;
+  }
+
+  .produto img {
+    height: 180px;
+  }
+
+  .produto h3 {
+    font-size: 14px;
+  }
+
+  .preco {
+    font-size: 20px;
+  }
+
+  .produto button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .carrinho {
+    width: calc(100% - 30px);
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 14px;
+  }
+
+  .rodape-conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rodape-links,
+  .rodape-contato {
+    margin-top: 20px;
+  }
+
+  .rodape-logo-destaque {
+    font-size: 26px;
+  }
+}

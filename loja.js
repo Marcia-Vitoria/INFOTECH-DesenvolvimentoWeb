@@ -1,5 +1,28 @@
 let quantidade = 0;
 let total = 0;
+
+function toggleMenu() {
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("ativo");
+}
+
+// Fecha o menu ao clicar em qualquer link (mobile)
+document.addEventListener("DOMContentLoaded", () => {
+    const linksMenu = document.querySelectorAll(".menu a");
+
+    linksMenu.forEach(link => {
+        link.addEventListener("click", () => {
+            document.querySelector(".menu").classList.remove("ativo");
+        });
+    });
+});
+
+// Fecha o menu ao voltar para desktop
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 600) {
+        document.querySelector(".menu").classList.remove("ativo");
+    }
+});
    
 function mostrarCategoria(categoria) {
     const produtos = document.querySelectorAll('.produto');
